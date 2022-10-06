@@ -14,27 +14,6 @@ const Footer = () => {
         <div className="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
         </div>
-
-        <div>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="facebook-f" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="twitter" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="google" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="instagram" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="linkedin" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="github" />
-          </a>
-        </div>
       </section>
 
       <section className="">
@@ -55,23 +34,32 @@ const Footer = () => {
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
-                <a href="#!" className="text-reset">
-                  Angular
+                <a
+                  href="https://www.facebook.com/people/Vibrant-Infra-Services-Ltd/100086471646080/"
+                  className="text-reset"
+                >
+                  Facebook
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  React
+                <a
+                  href="https://www.instagram.com/vibrantinfraservicesltd/"
+                  className="text-reset"
+                >
+                  Instagram
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  Vue
+                <a
+                  href="https://www.linkedin.com/in/vibrant-infra-services-ltd-b27568252/"
+                  className="text-reset"
+                >
+                  LinkedIn
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  Laravel
+                <a href="https://www.whatsapp.com/" className="text-reset">
+                  Whats App
                 </a>
               </p>
             </MDBCol>
@@ -80,22 +68,22 @@ const Footer = () => {
               <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Pricing
+                  Home
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Settings
+                  Service
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Orders
+                  About
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Help
+                  Contact
                 </a>
               </p>
             </MDBCol>
@@ -103,18 +91,16 @@ const Footer = () => {
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
-                <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
+                <MDBIcon icon="home" className="me-2" />4 A, Sahajanand Complex,
+                2416,Pune -Maharashtra 411001
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                Email:-Varinder@vibrantinfra.ca
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
-              </p>
-              <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+                <MDBIcon icon="phone" className="me-3" />
+                Phone:- + 17783876696
               </p>
             </MDBCol>
           </MDBRow>
@@ -127,7 +113,7 @@ const Footer = () => {
       >
         © 2021 Copyright:
         <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-          MDBootstrap.com
+          Vibrant Realty & Infrastructure
         </a>
       </div>
     </MDBFooter>
