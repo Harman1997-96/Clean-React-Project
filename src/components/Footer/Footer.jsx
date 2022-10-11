@@ -38,7 +38,7 @@ const Footer = () => {
                   href="https://www.facebook.com/people/Vibrant-Infra-Services-Ltd/100086471646080/"
                   className="text-reset"
                 >
-                  Facebook
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
               </p>
               <p>
@@ -46,7 +46,7 @@ const Footer = () => {
                   href="https://www.instagram.com/vibrantinfraservicesltd/"
                   className="text-reset"
                 >
-                  Instagram
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </p>
               <p>
@@ -54,12 +54,12 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/vibrant-infra-services-ltd-b27568252/"
                   className="text-reset"
                 >
-                  LinkedIn
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </p>
               <p>
                 <a href="https://www.whatsapp.com/" className="text-reset">
-                  Whats App
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
                 </a>
               </p>
             </MDBCol>
@@ -68,22 +68,30 @@ const Footer = () => {
               <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Home
+                  <i class="fa fa-home" aria-hidden="true">
+                    Home
+                  </i>
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Service
+                  <i class="fa fa-building" aria-hidden="true">
+                    Services
+                  </i>
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  About
+                  <i class="fa fa-eye" aria-hidden="true">
+                    About
+                  </i>
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Contact
+                  <i class="fa fa-phone" aria-hidden="true">
+                    Contact
+                  </i>
                 </a>
               </p>
             </MDBCol>
