@@ -87,5 +87,8 @@
 .service_Title {
   color: blue;
 }
-.service_description {
+.service_description p {
+  text-indent: 50px;
+  margin: 10px;
+  text-align: justify;
 }

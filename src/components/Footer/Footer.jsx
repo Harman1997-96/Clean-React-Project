@@ -33,42 +33,44 @@ const Footer = () => {
 
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-              <p>
-                <a
-                  href="https://www.facebook.com/people/Vibrant-Infra-Services-Ltd/100086471646080/"
-                  className="text-reset"
-                  style={{ textDecoration: 'none' }}
-                >
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-              </p>
-              <p>
-                <a
-                  href="https://www.instagram.com/vibrantinfraservicesltd/"
-                  className="text-reset"
-                  style={{ textDecoration: 'none' }}
-                >
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-              </p>
-              <p>
-                <a
-                  href="https://www.linkedin.com/in/vibrant-infra-services-ltd-b27568252/"
-                  className="text-reset"
-                  style={{ textDecoration: 'none' }}
-                >
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </p>
-              <p>
-                <a
-                  href="https://www.whatsapp.com/"
-                  className="text-reset"
-                  style={{ textDecoration: 'none' }}
-                >
-                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                </a>
-              </p>
+              <div className="product">
+                <p>
+                  <a
+                    href="https://www.facebook.com/people/Vibrant-Infra-Services-Ltd/100086471646080/"
+                    className="text-reset"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="https://www.instagram.com/vibrantinfraservicesltd/"
+                    className="text-reset"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/in/vibrant-infra-services-ltd-b27568252/"
+                    className="text-reset"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="https://www.whatsapp.com/"
+                    className="text-reset"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                </p>
+              </div>
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
