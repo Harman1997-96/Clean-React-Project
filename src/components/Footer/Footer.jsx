@@ -6,7 +6,7 @@ import {
   MDBCol,
   MDBIcon,
 } from 'mdb-react-ui-kit'
-
+import './Footer.css'
 const Footer = () => {
   return (
     <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
@@ -37,6 +37,7 @@ const Footer = () => {
                 <a
                   href="https://www.facebook.com/people/Vibrant-Infra-Services-Ltd/100086471646080/"
                   className="text-reset"
+                  style={{ textDecoration: 'none' }}
                 >
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
@@ -45,6 +46,7 @@ const Footer = () => {
                 <a
                   href="https://www.instagram.com/vibrantinfraservicesltd/"
                   className="text-reset"
+                  style={{ textDecoration: 'none' }}
                 >
                   <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
@@ -53,12 +55,17 @@ const Footer = () => {
                 <a
                   href="https://www.linkedin.com/in/vibrant-infra-services-ltd-b27568252/"
                   className="text-reset"
+                  style={{ textDecoration: 'none' }}
                 >
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </p>
               <p>
-                <a href="https://www.whatsapp.com/" className="text-reset">
+                <a
+                  href="https://www.whatsapp.com/"
+                  className="text-reset"
+                  style={{ textDecoration: 'none' }}
+                >
                   <i class="fa fa-whatsapp" aria-hidden="true"></i>
                 </a>
               </p>
@@ -66,50 +73,57 @@ const Footer = () => {
 
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p>
-                <a href="#!" className="text-reset">
-                  <i class="fa fa-home" aria-hidden="true">
+              <div className="useful-links">
+                <p>
+                  <a
+                    href="#!"
+                    className="text-reset"
+                    style={{ textDecoration: 'none' }}
+                  >
                     Home
-                  </i>
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  <i class="fa fa-building" aria-hidden="true">
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    className="text-reset"
+                    style={{ textDecoration: 'none' }}
+                  >
                     Services
-                  </i>
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  <i class="fa fa-eye" aria-hidden="true">
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    className="text-reset"
+                    style={{ textDecoration: 'none' }}
+                  >
                     About
-                  </i>
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  <i class="fa fa-phone" aria-hidden="true">
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    className="text-reset"
+                    style={{ textDecoration: 'none' }}
+                  >
                     Contact
-                  </i>
-                </a>
-              </p>
+                  </a>
+                </p>
+              </div>
             </MDBCol>
 
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-              <p>
-                <MDBIcon icon="home" className="me-2" />4 A, Sahajanand Complex,
-                2416,Pune -Maharashtra 411001
-              </p>
-              <p>
-                <MDBIcon icon="envelope" className="me-3" />
-                Email:-Varinder@vibrantinfra.ca
-              </p>
-              <p>
-                <MDBIcon icon="phone" className="me-3" />
-                Phone:- + 17783876696
-              </p>
+              <div className="contact">
+                <p>
+                  <MDBIcon icon="envelope" className="me-3" />
+                  Varinder@vibrantinfra.ca
+                </p>
+                <p>
+                  <MDBIcon icon="phone" className="me-3" />+ 17783876696
+                </p>
+              </div>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
@@ -119,7 +133,7 @@ const Footer = () => {
         className="text-center p-4"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}
       >
-        © 2021 Copyright:
+        © 2022 Copyright:
         <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
           Vibrant Realty & Infrastructure
         </a>

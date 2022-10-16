@@ -21,8 +21,21 @@
   gap: 2rem;
 }
 
-@media screen and (max-width: 480px){
-  .f-content{
-    transform: scale(.5);
+@media screen and (max-width: 480px) {
+  .f-content {
+    transform: scale(0.5);
+  }
+}
+.text-reset i {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+@media screen and (max-width: 480px) {
+  .contact {
+    margin-left: 38px;
+    /* text-indent: 50px; */
+    text-align: justify;
+    letter-spacing: 3px;
   }
 }

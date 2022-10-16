@@ -115,4 +115,7 @@
 .Intro-img img {
   width: 50%;
   height: 700px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

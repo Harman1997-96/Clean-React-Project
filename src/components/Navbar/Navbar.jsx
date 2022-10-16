@@ -9,18 +9,23 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import Exterior from '../Pages/Exterior'
 import Interior from '../Pages/Interior'
 import Logo from '../../img/logo.png'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const navbar = () => {
   return (
     <div className="navbar_container">
-      <Navbar collapseOnSelect expand="lg" variant="light">
+      <Navbar collapseOnSelect expand="lg" variant="dark">
         <Container>
           <Navbar.Brand href="#home">
             <img src={Logo} width="7%" height="5%" />
+            Vibrant Infra Services Ltd.
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            style={{ position: 'absolute', right: '0%', top: '12px' }}
+          />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="justify-content-end flex-grow-1 pe-3">
+            <Nav className="justify-content-end flex-grow-1 pe-3 me-auto">
               <Nav.Link href="#features">Home</Nav.Link>
               <NavDropdown title="Services" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
