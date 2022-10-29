@@ -1,15 +1,16 @@
 import React from 'react'
 import Toggle from '../Toggle/Toggle'
 import './Navbar.css'
-import { Link } from 'react-scroll'
+
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
-import Exterior from '../Pages/Exterior'
-import Interior from '../Pages/Interior'
 import Logo from '../../img/logo.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+import { render } from 'react-dom'
+import { Link } from 'react-router-dom'
 
 const navbar = () => {
   return (
@@ -18,7 +19,7 @@ const navbar = () => {
         <Container>
           <Navbar.Brand href="#home">
             <img src={Logo} width="7%" height="5%" />
-            Vibrant Infra Services Ltd.
+            &nbsp;&nbsp; Vibrant Infra Services Ltd.
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
@@ -26,19 +27,29 @@ const navbar = () => {
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="justify-content-end flex-grow-1 pe-3 me-auto">
-              <Nav.Link href="#features">Home</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
+              {/* <NavDropdown title="Services" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#">
+                  <Nav.Link href="/exterior">Exterier</Nav.Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#">
+                  <Nav.Link href="/interior">Interior</Nav.Link>
+                </NavDropdown.Item>
+              </NavDropdown> */}
               <NavDropdown title="Services" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
-                  <Exterior />
+                {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
+                <NavDropdown.Item href="/exterior">
+                  <Nav.Link></Nav.Link>
+                  Exterior
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  <Interior />
+                <NavDropdown.Item href="/interior">
+                  <Nav.Link></Nav.Link>
+                  Interior
                 </NavDropdown.Item>
-                {/* <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item> */}
+                <NavDropdown.Divider />
+                {/* <NavDropdown.Item href="#action/3.4">
+                  Separated link
+                </NavDropdown.Item> */}
               </NavDropdown>
               <Nav.Link href="#pricing">About</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>

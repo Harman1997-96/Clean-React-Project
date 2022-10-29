@@ -8,6 +8,8 @@ import { themeContext } from '../../Context'
 import { motion } from 'framer-motion'
 import Resume from './resume.pdf'
 
+import Review from '../../img/review.png'
+
 const Services = () => {
   // context
   const theme = useContext(themeContext)

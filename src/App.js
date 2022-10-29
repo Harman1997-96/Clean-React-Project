@@ -10,6 +10,11 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import { useContext } from 'react'
 import { themeContext } from './Context'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Exterior from '../src/components/Pages/Exterior'
+import Interior from '../src/components/Pages/Interior'
+import Review from './components/Pages/Review'
+
 function App() {
   const theme = useContext(themeContext)
   const darkMode = theme.state.darkMode
@@ -22,14 +27,14 @@ function App() {
       }}
     >
       <Navbar />
-      <Intro />
-      <Services />
-      {/* <Experience />
-      <Works />
-      <Portfolio />
-      <Testimonial /> */}
-      <Contact />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Intro />} />
+          <Route path="/exterior" element={<Exterior />} />
+          <Route path="/interior" element={<Interior />} />
+        </Routes>
+      </BrowserRouter>
+      {/* <Intro /> */}
     </div>
   )
 }

@@ -18,6 +18,9 @@ import cleanerA from '../../img/cleanerA1.jpg'
 import cleanerB from '../../img/cleaner2.jpg'
 import cleanerC from '../../img/cleanerA3.jpg'
 import Navbar from '../Navbar/Navbar'
+import Services from '../Services/Services'
+import Contact from '../Contact/Contact'
+import Footer from '../Footer/Footer'
 
 const Intro = () => {
   // Transition
@@ -46,6 +49,9 @@ const Intro = () => {
           </div>
         </Carousel.Item>
       </Carousel>
+      <Services />
+      <Contact />
+      <Footer />
     </div>
   )
 }
