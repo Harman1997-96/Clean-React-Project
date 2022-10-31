@@ -1,0 +1,13 @@
+.interior_img img {
+  width: 100%;
+}
+.interior_desc p {
+  margin: auto;
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 480px) {
+  .interior_desc p {
+    margin-top: 10px;
+  }
+}

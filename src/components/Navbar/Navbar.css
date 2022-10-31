@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+body {
+  font-family: 'Source Serif Pro', serif;
+}
+
+span {
+  font-size: 25px;
+  font-family: 'Yesteryear', cursive;
+}
 .n-wrapper {
   height: 10vh;
   display: flex;
@@ -51,4 +60,19 @@
 .navbar_container {
   /* border-radius: 50px; */
   background-color: #00008b !important;
+}
+
+@media screen and (max-width: 480px) {
+  .logo_set img {
+    width: 50px;
+  }
+}
+.header-scroll {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 9;
+  transition: 2s all ease !important;
+  background-color: #000 !important;
 }

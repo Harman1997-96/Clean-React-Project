@@ -1,28 +1,28 @@
-import React, { useContext } from 'react'
-import './Services.css'
-import Card from '../Card/Card'
-import HeartEmoji from '../../img/heartemoji.png'
-import Glasses from '../../img/glasses.png'
-import Humble from '../../img/humble.png'
-import { themeContext } from '../../Context'
-import { motion } from 'framer-motion'
-import Resume from './resume.pdf'
+import React, { useContext } from "react";
+import "./Services.css";
+import Card from "../Card/Card";
+import HeartEmoji from "../../img/heartemoji.png";
+import Glasses from "../../img/glasses.png";
+import Humble from "../../img/humble.png";
+import { themeContext } from "../../Context";
+import { motion } from "framer-motion";
+import Resume from "./resume.pdf";
 
-import Review from '../../img/review.png'
+import Review from "../../img/review.png";
 
 const Services = () => {
   // context
-  const theme = useContext(themeContext)
-  const darkMode = theme.state.darkMode
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
   // transition
   const transition = {
     duration: 1,
-    type: 'spring',
-  }
+    type: "spring",
+  };
 
   return (
-    <div className="services" id="services">
+    <div className="services" id="about">
       <div className="service_intro">
         <h1>Our Difference is Real</h1>
         <br />
@@ -72,7 +72,7 @@ const Services = () => {
       </div>
       <br />
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

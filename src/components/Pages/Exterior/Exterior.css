@@ -1,0 +1,13 @@
+.exterior_img img {
+  width: 100%;
+}
+.exterior_desc p {
+  margin: auto;
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 480px) {
+  .exterior_desc p {
+    margin-top: 10px;
+  }
+}

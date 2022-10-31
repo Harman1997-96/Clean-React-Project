@@ -1,41 +1,45 @@
-import React from 'react'
-import Toggle from '../Toggle/Toggle'
-import './Navbar.css'
+import React, { useState, useEffect } from "react";
+import Toggle from "../Toggle/Toggle";
+import "./Navbar.css";
 
-import Container from 'react-bootstrap/Container'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import Logo from '../../img/logo.png'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Logo from "../../img/logo.png";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import { render } from 'react-dom'
-import { Link } from 'react-router-dom'
+import { render } from "react-dom";
+import { Link } from "react-router-dom";
 
-const navbar = () => {
+const NavbarSet = () => {
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  }, []);
   return (
-    <div className="navbar_container">
+    <div
+      className={
+        scroll ? "header-scroll  navbar_container" : "navbar_container"
+      }
+    >
+      {/* <div className="navbar_container"> */}
       <Navbar collapseOnSelect expand="lg" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="#home" className="logo_set">
             <img src={Logo} width="7%" height="5%" />
-            &nbsp;&nbsp; Vibrant Infra Services Ltd.
+            &nbsp;&nbsp; <span>Vibrant Infra Services Ltd.</span>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
-            style={{ position: 'absolute', right: '0%', top: '12px' }}
+            style={{ position: "absolute", right: "0%", top: "12px" }}
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="justify-content-end flex-grow-1 pe-3 me-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              {/* <NavDropdown title="Services" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#">
-                  <Nav.Link href="/exterior">Exterier</Nav.Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#">
-                  <Nav.Link href="/interior">Interior</Nav.Link>
-                </NavDropdown.Item>
-              </NavDropdown> */}
+              <Nav.Link href="/#about">About</Nav.Link>
               <NavDropdown title="Services" id="collasible-nav-dropdown">
                 {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
                 <NavDropdown.Item href="/exterior">
@@ -51,8 +55,8 @@ const navbar = () => {
                   Separated link
                 </NavDropdown.Item> */}
               </NavDropdown>
-              <Nav.Link href="#pricing">About</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="/#gallery">Gallery</Nav.Link>
+              <Nav.Link href="/#contact">Contact</Nav.Link>
             </Nav>
             {/* <Nav>
             <Nav.Link href="#deets">More deets</Nav.Link>
@@ -64,7 +68,8 @@ const navbar = () => {
         </Container>
       </Navbar>
     </div>
-  )
-}
+    // </div>
+  );
+};
 
-export default navbar
+export default NavbarSet;

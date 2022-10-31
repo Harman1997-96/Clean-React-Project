@@ -20,7 +20,9 @@ import cleanerC from '../../img/cleanerA3.jpg'
 import Navbar from '../Navbar/Navbar'
 import Services from '../Services/Services'
 import Contact from '../Contact/Contact'
-import Footer from '../Footer/Footer'
+import Gallery from '../Gallery/Gallery'
+import Experience from '../Experience/Experience'
+import Testimonial from '../Testimonials/Testimonial'
 
 const Intro = () => {
   // Transition
@@ -50,8 +52,11 @@ const Intro = () => {
         </Carousel.Item>
       </Carousel>
       <Services />
+      <Gallery />
       <Contact />
-      <Footer />
+      <Testimonial />
+      <Experience />
+      {/* <Footer /> */}
     </div>
   )
 }
