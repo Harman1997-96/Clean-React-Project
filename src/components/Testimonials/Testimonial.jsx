@@ -15,7 +15,7 @@ const Testimonial = () => {
     {
       img: profilePic1,
       review:
-        'I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. It’s really great how easy your websites are to update and manage. I never have any problem at all.',
+        'I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. It’s really great how easy your websites.',
     },
     {
       img: profilePic2,
@@ -30,7 +30,7 @@ const Testimonial = () => {
     {
       img: profilePic4,
       review:
-        '   “You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.  ',
+        'You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.',
     },
   ]
 
