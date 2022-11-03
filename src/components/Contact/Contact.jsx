@@ -1,36 +1,38 @@
-import React, { useContext, useRef, useState } from "react";
-import "./Contact.css";
-import emailjs from "@emailjs/browser";
-import { themeContext } from "../../Context";
-import Review from "../../img/review.png";
-import Work from "../../img/HowWork.png";
-
+import React, { useContext, useRef, useState } from 'react'
+import './Contact.css'
+import emailjs from '@emailjs/browser'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import { themeContext } from '../../Context'
 const Contact = () => {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
-  const form = useRef();
-  const [done, setDone] = useState(false);
+  const notify = () => toast('Thanks for Contacting me')
+  const theme = useContext(themeContext)
+  const darkMode = theme.state.darkMode
+  const form = useRef()
+  const [done, setDone] = useState(false)
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
+        'service_awris65',
+        'template_ls556xd',
         form.current,
-        "VLwg1ltOWvnCYAiK_"
+        'q8Zk1WgiAbVNQSf91',
+        setDone(''),
       )
       .then(
         (result) => {
-          console.log(result.text);
-          setDone(true);
-          form.reset();
+          console.log(result.text)
+          setDone(true)
+          form.reset()
+          setDone('')
         },
         (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+          console.log(error.text)
+        },
+      )
+  }
 
   return (
     <>
@@ -39,11 +41,11 @@ const Contact = () => {
         <div className="w-left">
           <div className="awesome">
             {/* darkMode */}
-            <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
+            <span style={{ color: darkMode ? 'white' : '' }}>Get in Touch</span>
             <span>Contact me</span>
             <div
               className="blur s-blur1"
-              style={{ background: "#ABF1FF94" }}
+              style={{ background: '#ABF1FF94' }}
             ></div>
           </div>
         </div>
@@ -52,19 +54,19 @@ const Contact = () => {
           <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"
-              name="user_name"
+              name="to_name"
               className="user"
               placeholder="Name"
             />
             <input
               type="number"
-              name="phone_Number"
+              name="from_Number"
               className="user"
               placeholder="Phone Number"
             />
             <input
               type="email"
-              name="user_email"
+              name="from_email"
               className="user"
               placeholder="Email"
             />
@@ -81,11 +83,16 @@ const Contact = () => {
               <option value="Interior">Interior</option>
             </select>
             <textarea name="message" className="user" placeholder="Message" />
-            <input type="submit" value="Send" className="button" />
-            <span>{done && "Thanks for Contacting me"}</span>
+            <input
+              type="submit"
+              value="Send"
+              className="button"
+              onClick={notify}
+            />
+            <span>{done && 'Thanks for Contacting me'}</span>
             <div
               className="blur c-blur1"
-              style={{ background: "var(--purple)" }}
+              style={{ background: 'var(--purple)' }}
             ></div>
           </form>
         </div>
@@ -97,7 +104,7 @@ const Contact = () => {
         <img src={Work} />
       </div> */}
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

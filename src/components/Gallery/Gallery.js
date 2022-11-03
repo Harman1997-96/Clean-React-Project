@@ -29,13 +29,13 @@ const Gallery = () => {
 
         <div class="col-lg-4 mb-4 mb-lg-0">
           <img
-            src={GalleryA4}
+            src={GalleryA3}
             class="w-100 shadow-1-strong rounded mb-4"
             alt="Mountains in the Clouds"
           />
 
           <img
-            src={GalleryA3}
+            src={GalleryA4}
             class="w-100 shadow-1-strong rounded mb-4"
             alt="Boat on Calm Water"
           />
