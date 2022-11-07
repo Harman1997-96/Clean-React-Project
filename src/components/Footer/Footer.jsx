@@ -36,7 +36,7 @@ const Footer = () => {
               <div className="useful-links">
                 <p>
                   <a
-                    href="#!"
+                    href="/"
                     className="text-reset"
                     style={{ textDecoration: 'none' }}
                   >
@@ -45,16 +45,8 @@ const Footer = () => {
                 </p>
                 <p>
                   <a
-                    href="#!"
-                    className="text-reset"
-                    style={{ textDecoration: 'none' }}
-                  >
-                    Services
-                  </a>
-                </p>
-                <p>
-                  <a
-                    href="#!"
+                    href="/#about"
+                    id="about"
                     className="text-reset"
                     style={{ textDecoration: 'none' }}
                   >
@@ -63,7 +55,18 @@ const Footer = () => {
                 </p>
                 <p>
                   <a
-                    href="#!"
+                    href="/#gallery"
+                    id="gallery"
+                    className="text-reset"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    Gallery
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="/#contact"
+                    id="contact"
                     className="text-reset"
                     style={{ textDecoration: 'none' }}
                   >
