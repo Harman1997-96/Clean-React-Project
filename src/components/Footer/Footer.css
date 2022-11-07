@@ -21,16 +21,22 @@
   gap: 2rem;
 }
 
+.social_links p a {
+  margin: 28px !important;
+  position: relative;
+  right: 30px;
+}
+
 @media screen and (max-width: 480px) {
   .f-content {
     transform: scale(0.5);
   }
 }
-.text-reset i {
+/* .text-reset i {
   text-align: center;
   justify-content: center;
   display: flex;
-}
+} */
 @media screen and (max-width: 480px) {
   .contact {
     margin-left: 38px;

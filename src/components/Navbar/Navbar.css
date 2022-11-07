@@ -76,3 +76,8 @@ span {
   transition: 2s all ease !important;
   background-color: #000 !important;
 }
+.dropdown-item {
+  color: rgba(0, 0, 0, 0.477) !important;
+  font-size: 15px !important;
+  font-weight: bold;
+}

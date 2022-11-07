@@ -1,78 +1,86 @@
-import React, { useContext } from "react";
-import "./Services.css";
-import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
-import { themeContext } from "../../Context";
-import { motion } from "framer-motion";
-import Resume from "./resume.pdf";
+import React, { useContext } from 'react'
+import './Services.css'
+import Card from '../Card/Card'
+import HeartEmoji from '../../img/heartemoji.png'
+import Glasses from '../../img/glasses.png'
+import Humble from '../../img/humble.png'
+import { themeContext } from '../../Context'
+import { motion } from 'framer-motion'
+import Resume from './resume.pdf'
 
-import Review from "../../img/review.png";
+import Review from '../../img/review.png'
 
 const Services = () => {
   // context
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  const theme = useContext(themeContext)
+  const darkMode = theme.state.darkMode
 
   // transition
   const transition = {
     duration: 1,
-    type: "spring",
-  };
+    type: 'spring',
+  }
 
   return (
     <div className="services" id="about">
+      <blockquote class="sidekick">
+        Your Trust, Security, And Satisfaction Are Our Top Priorities.
+        <cite>Varinder Kumar</cite>
+      </blockquote>
       <div className="service_intro">
-        <h1>Our Difference is Real</h1>
+        <h1>About Us</h1>
         <br />
         <div className="service_Title">
-          <h3>Complete Service Provider</h3>
+          <h3>We provide services like.</h3>
         </div>
         <br />
         <div className="service_description">
           <p>
-            Our core business is window cleaning, and pressure washing. However,
-            we take pride in our ability to solve all of our clients’ service
-            challenges. 30 years of experience has given Coastline Services
-            expertise in many related fields and we have also built the
-            relationship with many leading companies in the industry. This
-            provides Coastline with the capability to complete all jobs to our
-            very high standards.
+            Serving a wide range of businesses throughout the lower mainland
+            ,Star Cleaning Services provides professional commercial cleaning
+            and janitorial services. As a dedicated cleaning service provider,
+            ensuring customer satisfaction is our top priority. Our cleaners are
+            trained and certified, take pride in providing industry-leading
+            customer service and are available 24/7 for facilities of all sizes.
+            We make sure that the cleaning needs of your business are met on
+            time and within your budget. Our commercial cleaning teams use only
+            modern cleaning technology and eco-friendly cleaning products to
+            help make sure your company maintains a healthy and tidy work
+            environment.
           </p>
         </div>
         <div className="service_Title">
-          <h3>Complete Service Provider</h3>
+          <h3>WHY US?</h3>
         </div>
         <div className="service_description">
           <p>
-            Our core business is window cleaning, and pressure washing. However,
-            we take pride in our ability to solve all of our clients’ service
-            challenges. 30 years of experience has given Coastline Services
-            expertise in many related fields and we have also built the
-            relationship with many leading companies in the industry. This
-            provides Coastline with the capability to complete all jobs to our
-            very high standards.
+            We conduct all businesses with the highest standards Our staff is
+            committed to providing a confident and professional experience and
+            are dedicated to getting the job done when and how you need it. We
+            have gathered an immense amount of experience in the industry and
+            are always ready to put it to work, and we are also always ready for
+            new challenges no matter the scale. We strive to deliver an
+            excellent service experience and grow partnerships with our clients.
           </p>
         </div>
         <div className="service_Title">
-          <h3>Complete Service Provider</h3>
+          <h3>OUR CULTURE</h3>
         </div>
         <div className="service_description">
           <p>
-            Our core business is window cleaning, and pressure washing. However,
-            we take pride in our ability to solve all of our clients’ service
-            challenges. 30 years of experience has given Coastline Services
-            expertise in many related fields and we have also built the
-            relationship with many leading companies in the industry. This
-            provides Coastline with the capability to complete all jobs to our
-            very high standards.
+            Our purpose is to improve lives through what we do. our purpose is
+            to provide you with the highest quality of cleaning. Your special
+            needs and unique requests are respected here and our team will take
+            the time necessary to find the solution to your problem. It's an
+            honour to see our clients with smiles on their faces after a very
+            successful job. We strongly believe that our cleaning can bring
+            happiness to many schools, offices and homes.
           </p>
         </div>
       </div>
       <br />
     </div>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services
