@@ -120,9 +120,9 @@ const Exterior = () => {
                   </div>
                 </div>
                 <div class="text-container">
-                  <h3>Glass Elevator</h3>
+                  <h3>Glass Canopy</h3>
                   <div>
-                    Glass Elevator is ideal, residential elevator design and
+                    Glass Canopy is ideal, residential elevator design and
                     simplicity.
                   </div>
                 </div>
@@ -174,7 +174,7 @@ const Exterior = () => {
                   </div>
                 </div>
                 <div class="text-container">
-                  <h3>Conopies </h3>
+                  <h3>Skylight </h3>
                   <div>
                     A canopy is a layer of something that spreads out and covers
                     an Area.

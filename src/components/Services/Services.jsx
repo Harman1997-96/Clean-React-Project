@@ -24,7 +24,7 @@ const Services = () => {
   return (
     <div className="services" id="about">
       <blockquote class="sidekick">
-        Your Trust, Security, And Satisfaction Are Our Top Priorities.
+        Your Trust, And Satisfaction Are Our Top Priorities.
         <cite>Varinder Kumar</cite>
       </blockquote>
       <div className="service_intro">
@@ -37,16 +37,15 @@ const Services = () => {
         <div className="service_description">
           <p>
             Serving a wide range of businesses throughout the lower mainland
-            ,Star Cleaning Services provides professional commercial cleaning
-            and janitorial services. As a dedicated cleaning service provider,
+            Cleaning Services provides professional commercial cleaning and
+            janitorial services. As a dedicated cleaning service provider,
             ensuring customer satisfaction is our top priority. Our cleaners are
             trained and certified, take pride in providing industry-leading
             customer service and are available 24/7 for facilities of all sizes.
             We make sure that the cleaning needs of your business are met on
             time and within your budget. Our commercial cleaning teams use only
-            modern cleaning technology and eco-friendly cleaning products to
-            help make sure your company maintains a healthy and tidy work
-            environment.
+            modern cleaning technology help make sure your company maintains a
+            healthy and tidy work environment.
           </p>
         </div>
         <div className="service_Title">
@@ -73,8 +72,7 @@ const Services = () => {
             needs and unique requests are respected here and our team will take
             the time necessary to find the solution to your problem. It's an
             honour to see our clients with smiles on their faces after a very
-            successful job. We strongly believe that our cleaning can bring
-            happiness to many schools, offices and homes.
+            successful job.
           </p>
         </div>
       </div>

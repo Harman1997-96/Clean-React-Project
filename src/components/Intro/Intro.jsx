@@ -55,7 +55,7 @@ const Intro = () => {
       <Gallery />
       <Contact />
       <Testimonial />
-      <Experience />
+      {/* <Experience /> */}
       {/* <Footer /> */}
     </div>
   )
