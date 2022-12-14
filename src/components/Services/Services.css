@@ -70,9 +70,10 @@
     margin-top: 1%;
     flex-direction: column;
     gap: 5rem;
-    height: 70rem;
+    height: 100rem;
     padding: 0;
     display: flex;
+    margin-bottom: 4px;
   }
 
   .cards {
