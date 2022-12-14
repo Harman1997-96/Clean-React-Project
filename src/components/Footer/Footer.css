@@ -25,7 +25,6 @@
   margin: 28px !important;
   position: relative;
   right: 30px;
-  display: flex;
 }
 
 @media screen and (max-width: 480px) {
