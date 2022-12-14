@@ -1,10 +1,12 @@
 import React from 'react'
+import './Gallery.css'
 import GalleryA1 from '../../img/gallery1.jpg'
 import GalleryA2 from '../../img/gallery2.jpg'
 import GalleryA3 from '../../img/gallery3.jpg'
 import GalleryA4 from '../../img/gallery4.jpg'
 import GalleryA5 from '../../img/gallery5.jpg'
 import GalleryA6 from '../../img/gallery6.jpg'
+import GalleryA7 from '../../img/Exterior7.jpg'
 
 const Gallery = () => {
   return (
@@ -12,7 +14,32 @@ const Gallery = () => {
       <div className="galler_heading" id="gallery">
         <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Gallery</h2>{' '}
       </div>
-      <div class="row">
+
+      <div class="container">
+        <div class="row">
+          <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src={GalleryA1} class="img-fluid rounded" />
+          </a>
+          <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src={GalleryA7} class="img-fluid rounded" />
+          </a>
+          <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src={GalleryA3} class="img-fluid rounded" />
+          </a>
+        </div>
+        <div class="row">
+          <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src={GalleryA4} class="img-fluid rounded" />
+          </a>
+          <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src={GalleryA5} class="img-fluid rounded" />
+          </a>
+          <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src={GalleryA6} class="img-fluid rounded" />
+          </a>
+        </div>
+      </div>
+      {/* <div class="row">
         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
           <img
             src={GalleryA1}
@@ -54,7 +81,7 @@ const Gallery = () => {
             alt="Yosemite National Park"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

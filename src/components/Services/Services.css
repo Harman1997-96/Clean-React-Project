@@ -1,7 +1,7 @@
 .services {
   padding: 0 3rem 0 3rem;
-  display: flex;
-  height: 43rem;
+  /* display: flex; */
+  height: 50rem;
   width: 95%;
   margin: auto;
   /* margin-bottom: 8rem; */
@@ -9,9 +9,14 @@
   /* margin-bottom: 13rem; */
   /* scroll view */
   padding-top: 3rem;
-  background-color: rgb(247, 206, 206);
+  background-color: rgba(72, 71, 71, 0.084);
+
+  /* background-image: url('../../img/logo.png'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
-  bottom: 142px;
+  /* bottom: 142px; */
 }
 /* left side */
 .awesome {
@@ -62,11 +67,12 @@
 
 @media screen and (max-width: 480px) {
   .services {
-    margin-top: 36%;
+    margin-top: 1%;
     flex-direction: column;
     gap: 5rem;
-    height: 100rem;
+    height: 90rem;
     padding: 0;
+    display: flex;
   }
 
   .cards {

@@ -12,7 +12,6 @@
 .t-heading {
   align-self: start;
 }
-
 @media screen and (max-width: 480px) {
   .t-heading span {
     position: relative;

@@ -7,6 +7,7 @@ import Humble from '../../img/humble.png'
 import { themeContext } from '../../Context'
 import { motion } from 'framer-motion'
 import Resume from './resume.pdf'
+import Image from '../../img/logo.png'
 
 import Review from '../../img/review.png'
 
@@ -22,7 +23,18 @@ const Services = () => {
   }
 
   return (
-    <div className="services" id="about">
+    <div
+      className="services"
+      id="about"
+      style={{
+        backgroundImage: `url(${Image})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'contain',
+        zIndex: 110,
+        // height: 600,
+        // width: 600,
+      }}
+    >
       <blockquote class="sidekick">
         Your Trust, And Satisfaction Are Our Top Priorities.
         <cite>Varinder Kumar</cite>

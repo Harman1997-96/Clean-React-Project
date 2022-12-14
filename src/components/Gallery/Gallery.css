@@ -1,0 +1,8 @@
+.row {
+  margin: 15px;
+}
+@media screen and (max-width: 480px) {
+  .row img {
+    margin: 15px;
+  }
+}
