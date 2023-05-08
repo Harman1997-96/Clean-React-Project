@@ -14,9 +14,13 @@ import { themeContext } from '../../Context'
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
 import Carousel from 'react-bootstrap/Carousel'
-import cleanerA from '../../img/cleanerA1.jpg'
-import cleanerB from '../../img/cleaner2.jpg'
-import cleanerC from '../../img/cleanerA3.jpg'
+import cleanerA from '../../img/gallery6.jpg'
+import cleanerB from '../../img/gallery5.jpg'
+import cleanerC from '../../img/gallery3.jpg'
+import cleanerD from '../../img/gallery1.jpg'
+import cleanerE from '../../img/gallery2.jpg'
+import cleanerF from '../../img/gallery4.jpg'
+
 import Navbar from '../Navbar/Navbar'
 import Services from '../Services/Services'
 import Contact from '../Contact/Contact'
@@ -50,9 +54,24 @@ const Intro = () => {
             <img className="d-block w-100" src={cleanerC} alt="Third slide" />
           </div>
         </Carousel.Item>
+        <Carousel.Item>
+          <div className="Intro-img">
+            <img className="d-block w-100" src={cleanerD} alt="Four slide" />
+          </div>
+        </Carousel.Item>{' '}
+        <Carousel.Item>
+          <div className="Intro-img">
+            <img className="d-block w-100" src={cleanerE} alt="Five slide" />
+          </div>
+        </Carousel.Item>{' '}
+        <Carousel.Item>
+          <div className="Intro-img">
+            <img className="d-block w-100" src={cleanerF} alt="six slide" />
+          </div>
+        </Carousel.Item>
       </Carousel>
       <Services />
-      <Gallery />
+      {/* <Gallery /> */}
       <Contact />
       <Testimonial />
       {/* <Experience /> */}

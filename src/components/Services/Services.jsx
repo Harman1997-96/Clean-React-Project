@@ -27,10 +27,10 @@ const Services = () => {
       className="services"
       id="about"
       style={{
-        backgroundImage: `url(${Image})`,
+        backgroundImage: `linear-gradient(rgba(243, 241, 241, 0.959),rgba(237, 232, 232, 0.685)),url(${Image})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'contain',
-        zIndex: 110,
+        // zIndex: 110,
         // height: 600,
         // width: 600,
       }}
@@ -39,11 +39,12 @@ const Services = () => {
         Your Trust, And Satisfaction Are Our Top Priorities.
         <cite>Varinder Kumar</cite>
       </blockquote>
+
       <div className="service_intro">
-        <h1>About Us</h1>
+        {/* <h1>About Us</h1> */}
         <br />
         <div className="service_Title">
-          <h3>We provide services like.</h3>
+          <h3>Service that Matters</h3>
         </div>
         <br />
         <div className="service_description">
@@ -61,7 +62,7 @@ const Services = () => {
           </p>
         </div>
         <div className="service_Title">
-          <h3>WHY US?</h3>
+          <h3>Your Loyalty in Us</h3>
         </div>
         <div className="service_description">
           <p>
@@ -75,7 +76,7 @@ const Services = () => {
           </p>
         </div>
         <div className="service_Title">
-          <h3>OUR CULTURE</h3>
+          <h3>We Can Serve You Better</h3>
         </div>
         <div className="service_description">
           <p>
@@ -84,7 +85,8 @@ const Services = () => {
             needs and unique requests are respected here and our team will take
             the time necessary to find the solution to your problem. It's an
             honour to see our clients with smiles on their faces after a very
-            successful job.
+            successful job.we have been working in this field for more than five
+            year.
           </p>
         </div>
       </div>

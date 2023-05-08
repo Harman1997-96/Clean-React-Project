@@ -1,28 +1,28 @@
-import React, { useState, useEffect } from "react";
-import Toggle from "../Toggle/Toggle";
-import "./Navbar.css";
+import React, { useState, useEffect } from 'react'
+import Toggle from '../Toggle/Toggle'
+import './Navbar.css'
 
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Logo from "../../img/logo.png";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Logo from '../../img/logo.png'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { render } from "react-dom";
-import { Link } from "react-router-dom";
+import { render } from 'react-dom'
+import { Link } from 'react-router-dom'
 
 const NavbarSet = () => {
-  const [scroll, setScroll] = useState(false);
+  const [scroll, setScroll] = useState(false)
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 50);
-    });
-  }, []);
+    window.addEventListener('scroll', () => {
+      setScroll(window.scrollY > 50)
+    })
+  }, [])
   return (
     <div
       className={
-        scroll ? "header-scroll  navbar_container" : "navbar_container"
+        scroll ? 'header-scroll  navbar_container' : 'navbar_container'
       }
     >
       {/* <div className="navbar_container"> */}
@@ -34,12 +34,11 @@ const NavbarSet = () => {
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
-            style={{ position: "absolute", right: "0%", top: "12px" }}
+            style={{ position: 'absolute', right: '0%', top: '12px' }}
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="justify-content-end flex-grow-1 pe-3 me-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/#about">About</Nav.Link>
               <NavDropdown title="Services" id="collasible-nav-dropdown">
                 {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
                 <NavDropdown.Item href="/exterior">
@@ -55,7 +54,8 @@ const NavbarSet = () => {
                   Separated link
                 </NavDropdown.Item> */}
               </NavDropdown>
-              <Nav.Link href="/#gallery">Gallery</Nav.Link>
+              {/* <Nav.Link href="/#gallery">Gallery</Nav.Link> */}
+              <Nav.Link href="/#about">Work with us</Nav.Link>
               <Nav.Link href="/#contact">Contact</Nav.Link>
             </Nav>
             {/* <Nav>
@@ -69,7 +69,7 @@ const NavbarSet = () => {
       </Navbar>
     </div>
     // </div>
-  );
-};
+  )
+}
 
-export default NavbarSet;
+export default NavbarSet
