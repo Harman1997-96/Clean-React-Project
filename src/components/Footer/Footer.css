@@ -31,7 +31,15 @@
   position: relative;
   right: 30px;
 }
+.social_links p {
+  display: flex;
+}
 
+@media screen and (max-width: 480px) {
+  .social_links p {
+    display: block;
+  }
+}
 @media screen and (max-width: 480px) {
   .f-content {
     transform: scale(0.5);
