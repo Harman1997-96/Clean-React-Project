@@ -56,7 +56,7 @@ const NavbarSet = () => {
               </NavDropdown>
               {/* <Nav.Link href="/#gallery">Gallery</Nav.Link> */}
               <Nav.Link href="/workwithus">Work with us</Nav.Link>
-              <Nav.Link href="/#contact">Contact</Nav.Link>
+              <Nav.Link href="/#contact">Contact Us</Nav.Link>
             </Nav>
             {/* <Nav>
             <Nav.Link href="#deets">More deets</Nav.Link>

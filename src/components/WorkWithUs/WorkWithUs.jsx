@@ -16,9 +16,6 @@ const WorkWithUs = () => {
           <div className="head-image">
             <img src={workwithus} alt="Work With us" />
           </div>
-          <div class="text-on-image">
-            <h1> Apply to Work with Us </h1>
-          </div>
         </div>
         <div className="container-fluid">
           <div className="work-form">
@@ -26,7 +23,22 @@ const WorkWithUs = () => {
               <div id="login-box">
                 <div>
                   <div className="item">
-                    <p style={{ fontWeight: 'bolder' }}>
+                    <div class="text-on-image">
+                      <h1
+                        style={{
+                          fontFamily: 'sans-serif',
+                        }}
+                      >
+                        {' '}
+                        Apply to Work with Us{' '}
+                      </h1>
+                    </div>
+                    <p
+                      style={{
+                        fontWeight: 'bolder',
+                        fontFamily: 'sans-serif',
+                      }}
+                    >
                       Name<span className="required">*</span>
                     </p>
                     <div className="name-item">
@@ -45,31 +57,41 @@ const WorkWithUs = () => {
                     </div>
                   </div>
                   <div className="item">
-                    <p style={{ fontWeight: 'bolder' }}>
+                    <p
+                      style={{ fontWeight: 'bolder', fontFamily: 'sans-serif' }}
+                    >
                       Email<span className="required">*</span>
                     </p>
                     <input type="text" name="name" />
                   </div>
                   <div className="item">
-                    <p style={{ fontWeight: 'bolder' }}>
+                    <p
+                      style={{ fontWeight: 'bolder', fontFamily: 'sans-serif' }}
+                    >
                       Phone Number<span className="required">*</span>
                     </p>
                     <input type="number" name="name" />
                   </div>
                   <div className="item">
-                    <p style={{ fontWeight: 'bolder' }}>
+                    <p
+                      style={{ fontWeight: 'bolder', fontFamily: 'sans-serif' }}
+                    >
                       Country of Residence<span className="required">*</span>
                     </p>
                     <input type="text" name="name" placeholder="Canada" />
                   </div>
                   <div className="item">
-                    <p style={{ fontWeight: 'bolder' }}>
+                    <p
+                      style={{ fontWeight: 'bolder', fontFamily: 'sans-serif' }}
+                    >
                       City of Residence<span className="required">*</span>
                     </p>
                     <input type="text" name="name" />
                   </div>
                   <div className="question">
-                    <p style={{ fontWeight: 'bolder' }}>
+                    <p
+                      style={{ fontWeight: 'bolder', fontFamily: 'sans-serif' }}
+                    >
                       Do you have previous experience in windows cleaning,
                       pressure washing or painting?
                       <span className="required">*</span>
@@ -82,7 +104,7 @@ const WorkWithUs = () => {
                           name="gender"
                           required
                         />{' '}
-                        <span>Yes</span>
+                        <span style={{ fontFamily: 'sans-serif' }}>Yes</span>
                       </label>
                       <label>
                         <input
@@ -91,12 +113,14 @@ const WorkWithUs = () => {
                           name="gender"
                           required
                         />{' '}
-                        <span>NO</span>
+                        <span style={{ fontFamily: 'sans-serif' }}>No</span>
                       </label>
                     </div>
                   </div>
                   <div className="question">
-                    <p style={{ fontWeight: 'bolder' }}>
+                    <p
+                      style={{ fontWeight: 'bolder', fontFamily: 'sans-serif' }}
+                    >
                       Do you have any certification
                       <span className="required">*</span>
                     </p>
@@ -108,7 +132,7 @@ const WorkWithUs = () => {
                           name="gender"
                           required
                         />{' '}
-                        <span>Yes</span>
+                        <span style={{ fontFamily: 'sans-serif' }}>Yes</span>
                       </label>
                       <label>
                         <input
@@ -117,12 +141,22 @@ const WorkWithUs = () => {
                           name="gender"
                           required
                         />{' '}
-                        <span>NO</span>
+                        <span style={{ fontFamily: 'sans-serif' }}>No</span>
                       </label>
+                    </div>
+                    <div className="certificate-box">
+                      <input
+                        type="text"
+                        id="lname"
+                        name="lname"
+                        defaultValue="Certificates"
+                      />
                     </div>
                   </div>
                   <div className="question">
-                    <p style={{ fontWeight: 'bolder' }}>
+                    <p
+                      style={{ fontWeight: 'bolder', fontFamily: 'sans-serif' }}
+                    >
                       Are you allowed to work in Canada?
                       <span className="required">*</span>
                     </p>
@@ -134,12 +168,16 @@ const WorkWithUs = () => {
                           name="gender"
                           required
                         />{' '}
-                        <span>I am allowed to work in Canada</span>
+                        <span style={{ fontFamily: 'sans-serif' }}>
+                          I am allowed to work in Canada
+                        </span>
                       </label>
                     </div>
                   </div>
                   <div className="question">
-                    <p style={{ fontWeight: 'bolder' }}>
+                    <p
+                      style={{ fontWeight: 'bolder', fontFamily: 'sans-serif' }}
+                    >
                       Privacy Policy
                       <span className="required">*</span>
                     </p>
@@ -151,7 +189,9 @@ const WorkWithUs = () => {
                           name="gender"
                           required
                         />{' '}
-                        <span>I accept the Privacy Policy</span>
+                        <span style={{ fontFamily: 'sans-serif' }}>
+                          I accept the Privacy Policy
+                        </span>
                       </label>
                     </div>
                   </div>

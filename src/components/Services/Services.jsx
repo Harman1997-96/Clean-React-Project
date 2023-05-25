@@ -85,7 +85,7 @@ const Services = () => {
             needs and unique requests are respected here and our team will take
             the time necessary to find the solution to your problem. It's an
             honour to see our clients with smiles on their faces after a very
-            successful job.we have been working in this field for more than five
+            successful job.We have been working in this field for more than five
             year.
           </p>
         </div>

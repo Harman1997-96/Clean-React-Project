@@ -7,7 +7,7 @@
 }
 @media screen and (max-width: 480px) {
   .bg-light {
-    margin-top: 20pc;
+    /* margin-top: 20pc; */
   }
 }
 .f-content {
@@ -56,5 +56,11 @@
     /* text-indent: 50px; */
     text-align: justify;
     letter-spacing: 2px;
+  }
+}
+@media (min-width: 1200px) {
+  .col-xl-3 {
+    flex: 0 0 auto;
+    width: 29%;
   }
 }
