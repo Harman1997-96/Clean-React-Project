@@ -34,7 +34,7 @@ const NavbarSet = () => {
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
-            style={{ position: 'absolute', right: '0%', top: '12px' }}
+            style={{ position: 'absolute', right: '-8%', top: '18px' }}
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="justify-content-end flex-grow-1 pe-3 me-auto">
@@ -55,7 +55,7 @@ const NavbarSet = () => {
                 </NavDropdown.Item> */}
               </NavDropdown>
               {/* <Nav.Link href="/#gallery">Gallery</Nav.Link> */}
-              <Nav.Link href="/#about">Work with us</Nav.Link>
+              <Nav.Link href="/workwithus">Work with us</Nav.Link>
               <Nav.Link href="/#contact">Contact</Nav.Link>
             </Nav>
             {/* <Nav>

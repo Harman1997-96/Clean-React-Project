@@ -17,6 +17,7 @@ import Interior from './components/Pages/Interior/Interior'
 import Review from './components/Pages/Review'
 import NavbarSet from './components/Navbar/Navbar'
 import Exterior from './components/Pages/Exterior/Exterior'
+import WorkWithUs from './components/WorkWithUs/WorkWithUs'
 
 function App() {
   const theme = useContext(themeContext)
@@ -36,6 +37,7 @@ function App() {
           <Route path="/" element={<Intro />} />
           <Route path="/exterior" element={<Exterior />} />
           <Route path="/interior" element={<Interior />} />
+          <Route path="/workwithus" element={<WorkWithUs />} />
         </Routes>
       </BrowserRouter>
       <Footer />

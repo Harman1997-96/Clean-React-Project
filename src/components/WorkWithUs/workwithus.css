@@ -1,0 +1,158 @@
+.head-image img {
+  width: 100%;
+  height: 500px;
+}
+
+.head-text {
+  position: relative;
+}
+.work-head {
+  background-color: #ddd;
+  height: 1900px;
+}
+@media screen and (max-width: 480px) {
+  .work-head {
+    height: 1600px;
+  }
+}
+
+.text-on-image h1 {
+  position: absolute;
+  right: 50%;
+  left: 26%;
+  bottom: 50%;
+  color: #fff;
+  width: 44%;
+  font-size: 80px;
+  font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .text-on-image h1 {
+    font-size: 27px;
+  }
+}
+.work-form {
+  width: 98%;
+  margin: auto;
+  position: relative;
+  background-color: #fff;
+  bottom: 157px;
+  border-radius: 10px;
+  padding: 241px;
+}
+
+@media screen and (max-width: 480px) {
+  .work-form {
+    padding: 20px;
+  }
+}
+.left-side {
+  position: relative;
+  top: 189px;
+}
+h1 {
+  position: absolute;
+  margin: 0;
+  font-size: 36px;
+  color: #fff;
+  z-index: 2;
+}
+span.required {
+  color: red;
+}
+.testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 20px;
+}
+/* form {
+  width: 100%;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 30px 0 #095484;
+} */
+
+p.top-info {
+  margin: 10px 0;
+}
+input,
+select {
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  border-bottom: 2px solid #00000013;
+}
+
+input {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+select {
+  width: 100%;
+  padding: 7px 0;
+  background: transparent;
+}
+.item:hover p,
+.question:hover p,
+.question label:hover,
+input:hover::placeholder {
+  color: #095484;
+}
+.item input:hover,
+.item select:hover {
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px 0 #095484;
+  color: #095484;
+}
+.item {
+  position: relative;
+  margin: 10px 0;
+}
+.question input {
+  width: auto;
+  margin: 0;
+  border-radius: 50%;
+}
+.question input,
+.question span {
+  vertical-align: middle;
+}
+.question label {
+  display: inline-block;
+  margin: 5px 20px 15px 0;
+}
+.btn-block {
+  margin-top: 10px;
+  text-align: center;
+}
+button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #095484;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #0666a3;
+}
+@media (min-width: 568px) {
+  .name-item,
+  .city-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .name-item input,
+  .city-item input {
+    width: calc(50% - 20px);
+  }
+  .city-item select {
+    width: calc(50% - 8px);
+  }
+}

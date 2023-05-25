@@ -17,7 +17,7 @@ const Interior = () => {
       <Container>
         <div className="exterior_page">
           <Row>
-            <Col md={4}>
+            <Col md={6}>
               <div class="a-box">
                 <div class="img-container">
                   <div class="img-inner">
@@ -29,13 +29,17 @@ const Interior = () => {
                 <div class="text-container">
                   <h3> Floor Care</h3>
                   <div>
-                    A Cleaner is a industry worker workplace is always clean &
-                    sanitary.
+                    Floors and carpet are very hard to replace if damaged, we
+                    provide with carpet extraction as carpets houses many
+                    diseases if kept unchecked, with extraction the hidden dust
+                    and grease is cleaned off the carpet thus keeping the place
+                    hygienic and fresh. The floor care provides extra layer of
+                    protection from scratches and gives shine to the floor.
                   </div>
                 </div>
               </div>
             </Col>
-            {/* <Col md={4}>
+            {/* <Col md={6}>
               <div class="a-box">
                 <div class="img-container">
                   <div class="img-inner">
@@ -53,7 +57,7 @@ const Interior = () => {
                 </div>
               </div>
             </Col>{' '} */}
-            <Col md={4}>
+            <Col md={6}>
               <div class="a-box">
                 <div class="img-container">
                   <div class="img-inner">
@@ -65,13 +69,17 @@ const Interior = () => {
                 <div class="text-container">
                   <h3>Janitorial</h3>
                   <div>
-                    Janitorial building and keeping it maintained in good
-                    condition.
+                    Maintaining a business from inside is an integral part.
+                    Keeping place neat and clean keeps it hygienic for everyone.
+                    We provide janitorial services too for different kind of
+                    buildings rather be a commercial or residential building.
+                    Our team is well trained for sanitizing or maintaining a
+                    healthy and clean building
                   </div>
                 </div>
               </div>
             </Col>{' '}
-            <Col md={4}>
+            <Col md={6}>
               <div class="a-box">
                 <div class="img-container">
                   <div class="img-inner">
@@ -83,13 +91,16 @@ const Interior = () => {
                 <div class="text-container">
                   <h3>Painting</h3>
                   <div>
-                    The creation of certain aesthetic qualities, in a
-                    two-dimensional visual.
+                    Painting is the best way to get a new look for the house or
+                    clean up kid’s mess and prevent walls and keeping them in
+                    good shape. We provide any kind painting services too rather
+                    it be inside or outside. We have expertise with spray paint
+                    or stucco.
                   </div>
                 </div>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={6}>
               <div class="a-box">
                 <div class="img-container">
                   <div class="img-inner">

@@ -5,6 +5,11 @@
   position: relative;
   margin-top: -7rem;
 }
+@media screen and (max-width: 480px) {
+  .bg-light {
+    margin-top: 20pc;
+  }
+}
 .f-content {
   position: absolute;
   display: flex;

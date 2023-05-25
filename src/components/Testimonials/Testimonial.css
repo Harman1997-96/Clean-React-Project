@@ -9,6 +9,11 @@
   gap: 2rem;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .tour-item {
+    height: 200vh;
+  }
+}
 .t-heading {
   /* align-self: start; */
 }
@@ -77,9 +82,126 @@
 @media screen and (max-width: 480px) {
   .t-wrapper {
     padding: 0;
+    top: 12pc;
   }
   .testimonial > img {
     width: 70px;
     height: 70px;
   }
+}
+
+.home-testimonial {
+  /* background-color: #231834; */
+  height: 500px;
+}
+.home-testimonial-bottom {
+  /* background-color: #f8f8f8d9; */
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  position: relative;
+  height: 130px;
+  top: 190px;
+}
+.home-testimonial h3 {
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.home-testimonial h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+.testimonial-inner {
+  position: relative;
+  top: -174px;
+}
+.testimonial-pos {
+  position: relative;
+  top: 24px;
+}
+.testimonial-inner .tour-desc {
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.color-grey-3 {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 14px;
+  color: #6c83a2;
+}
+.testimonial-inner img.tm-people {
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: none;
+  margin-right: 14pc;
+}
+.link-name {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #000;
+  bottom: 66px;
+  position: relative;
+  left: 4pc;
+}
+.link-position {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 12px;
+  color: #6c83a2;
+}
+.date-range {
+  position: relative;
+  right: 34%;
+}
+.ratting {
+  position: relative;
+  left: 23px;
+  bottom: 62px;
+  color: orange;
+}
+.goolge-icon {
+  position: relative;
+  left: 94%;
+  left: 197%;
+  bottom: 50px;
+}
+.fa-google {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.carousel-control-next-icon {
+  /* background-image: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23fff%27%3e%3cpath d=%27M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e); */
+  background-color: #000;
+  margin-left: 10pc;
+  margin-bottom: 3pc;
+}
+
+.carousel-control-prev-icon {
+  background-color: #000;
+  margin-right: 10pc;
+  margin-bottom: 3pc;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: black;
 }
