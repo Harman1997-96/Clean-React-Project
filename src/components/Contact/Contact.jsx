@@ -1,42 +1,41 @@
-import React, { useContext, useRef, useState } from 'react'
-import './Contact.css'
-import emailjs from '@emailjs/browser'
-import toast from 'react-hot-toast'
-import 'react-toastify/dist/ReactToastify.css'
-import { themeContext } from '../../Context'
+import React, { useContext, useRef, useState } from "react";
+import "./Contact.css";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
+import "react-toastify/dist/ReactToastify.css";
+import { themeContext } from "../../Context";
 const Contact = () => {
-  const notify = () => toast('Thanks For Contact US')
-  const theme = useContext(themeContext)
-  const darkMode = theme.state.darkMode
-  const form = useRef()
-  const [done, setDone] = useState(false)   
+  const notify = () => toast("Thanks For Contact US");
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+  const form = useRef();
+  const [done, setDone] = useState(false);
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
       .sendForm(
-        'service_wjgphai',
-        'template_ls556xd',
-        form.current, 
-        'q8Zk1WgiAbVNQSf91',
-        setDone(''),
+        "service_zvdwye9",
+        "template_s3t9uub",
+        form.current,
+        "vEBblt1uruViu-5at",
+        setDone("")
       )
       .then(
         (result) => {
-          console.log(result.text)
-          setDone(true)
-          form.reset()
-          setDone('')
-          toast.success('Thank You For Contact')
+          console.log(result.text);
+          setDone(true);
+          form.reset();
+          setDone("");
+          toast.success("Thank You For Contact");
+        },
 
-        },
-        
         (error) => {
-          toast.error('Something wrong')
-          console.log(error.text)
-        },
-      )
-  }
+          toast.error("Something wrong");
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <>
@@ -45,11 +44,11 @@ const Contact = () => {
         <div className="w-left">
           <div className="awesome">
             {/* darkMode */}
-            <span style={{ color: darkMode ? 'white' : '' }}>Get in Touch</span>
+            <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
             <span>Contact us</span>
             <div
               className="blur s-blur1"
-              style={{ background: '#ABF1FF94' }}
+              style={{ background: "#ABF1FF94" }}
             ></div>
           </div>
         </div>
@@ -93,16 +92,16 @@ const Contact = () => {
               className="button"
               onClick={notify}
             />
-            <span>{done && 'Thanks for Contacting me'}</span>
+            <span>{done && "Thanks for Contacting me"}</span>
             <div
               className="blur c-blur1"
-              style={{ background: 'var(--purple)' }}
+              style={{ background: "var(--purple)" }}
             ></div>
           </form>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
