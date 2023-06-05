@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Toggle from '../Toggle/Toggle'
 import './Navbar.css'
-
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Logo from '../../img/logo.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
-import { render } from 'react-dom'
-import { Link } from 'react-router-dom'
-
 const NavbarSet = () => {
   const [scroll, setScroll] = useState(false)
   useEffect(() => {
@@ -28,7 +23,7 @@ const NavbarSet = () => {
       {/* <div className="navbar_container"> */}
       <Navbar collapseOnSelect expand="lg" variant="dark">
         <Container>
-          <Navbar.Brand href="#home" className="logo_set">
+          <Navbar.Brand href="/" className="logo_set">
             <img src={Logo} width="7%" height="5%" />
             &nbsp;&nbsp; <span>Vibrant Infra Services Ltd.</span>
           </Navbar.Brand>
@@ -58,12 +53,6 @@ const NavbarSet = () => {
               <Nav.Link href="/workwithus">Work with us</Nav.Link>
               <Nav.Link href="/#contact">Contact Us</Nav.Link>
             </Nav>
-            {/* <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

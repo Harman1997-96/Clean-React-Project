@@ -1,23 +1,23 @@
 import React, { useContext, useRef, useState } from 'react'
 import './Contact.css'
 import emailjs from '@emailjs/browser'
-import { ToastContainer, toast } from 'react-toastify'
+import toast from 'react-hot-toast'
 import 'react-toastify/dist/ReactToastify.css'
 import { themeContext } from '../../Context'
 const Contact = () => {
-  const notify = () => toast('Thanks for Contacting me')
+  const notify = () => toast('Thanks For Contact US')
   const theme = useContext(themeContext)
   const darkMode = theme.state.darkMode
   const form = useRef()
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState(false)   
   const sendEmail = (e) => {
     e.preventDefault()
 
     emailjs
       .sendForm(
-        'service_awris65',
+        'service_wjgphai',
         'template_ls556xd',
-        form.current,
+        form.current, 
         'q8Zk1WgiAbVNQSf91',
         setDone(''),
       )
@@ -27,8 +27,12 @@ const Contact = () => {
           setDone(true)
           form.reset()
           setDone('')
+          toast.success('Thank You For Contact')
+
         },
+        
         (error) => {
+          toast.error('Something wrong')
           console.log(error.text)
         },
       )
@@ -97,12 +101,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      {/* <div className="review">
-        <img src={Review} />
-      </div>
-      <div className="work">
-        <img src={Work} />
-      </div> */}
     </>
   )
 }

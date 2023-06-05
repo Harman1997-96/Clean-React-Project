@@ -39,24 +39,6 @@ const Interior = () => {
                 </div>
               </div>
             </Col>
-            {/* <Col md={6}>
-              <div class="a-box">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src={Construction} />
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Construction</h3>
-                  <div>
-                    The process of removing any debris,your gutters and
-                    downspouts ground.
-                  </div>
-                </div>
-              </div>
-            </Col>{' '} */}
             <Col md={6}>
               <div class="a-box">
                 <div class="img-container">

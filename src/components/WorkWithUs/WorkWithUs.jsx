@@ -1,16 +1,45 @@
-import React from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import './workwithus.css'
 import workwithus from '../../img/workwithus.jpg'
+import emailjs from '@emailjs/browser'
+import toast from 'react-hot-toast'
+import 'react-toastify/dist/ReactToastify.css'
+import { themeContext } from '../../Context'
 
 const WorkWithUs = () => {
+  const notify = () => toast('Thanks For Contact US')
+  const theme = useContext(themeContext)
+  const darkMode = theme.state.darkMode
+  const form = useRef()
+  const [done, setDone] = useState(false)   
+  const sendEmail = (e) => {
+    e.preventDefault()
+  emailjs
+  .sendForm(
+    'service_wjgphai',
+    'template_yjd2fup',
+    form.current, 
+    'q8Zk1WgiAbVNQSf91',
+    setDone(''),
+  )
+  .then(
+    (result) => {
+      console.log(result.text)
+      setDone(true)
+      form.reset()
+      setDone('')
+      toast.success('Thank You For Contact')
+
+    },
+    
+    (error) => {
+      toast.error('Something wrong')
+      console.log(error.text)
+    },
+  )
+}
   return (
     <div>
-      {/* <div className="work-heading">
-        <h1>Apply to Work with Us</h1>
-      </div>
-      <div className="work-header-img">
-        <img src={workwithus} />
-      </div> */}
       <div className="work-head">
         <div className="head-text">
           <div className="head-image">
@@ -21,6 +50,7 @@ const WorkWithUs = () => {
           <div className="work-form">
             <div className='left-side"'>
               <div id="login-box">
+              <form ref={form} onSubmit={sendEmail}>
                 <div>
                   <div className="item">
                     <div class="text-on-image">
@@ -44,13 +74,13 @@ const WorkWithUs = () => {
                     <div className="name-item">
                       <input
                         type="text"
-                        name="name"
+                        name="to_name"
                         placeholder="First"
                         required
                       />
                       <input
                         type="text"
-                        name="name"
+                        name="to_lastName"
                         placeholder="Last"
                         required
                       />
@@ -62,7 +92,7 @@ const WorkWithUs = () => {
                     >
                       Email<span className="required">*</span>
                     </p>
-                    <input type="text" name="name" />
+                    <input type="text" name="from_email" />
                   </div>
                   <div className="item">
                     <p
@@ -70,7 +100,7 @@ const WorkWithUs = () => {
                     >
                       Phone Number<span className="required">*</span>
                     </p>
-                    <input type="number" name="name" />
+                    <input type="number" name="from_phoneNumber" />
                   </div>
                   <div className="item">
                     <p
@@ -78,7 +108,7 @@ const WorkWithUs = () => {
                     >
                       Country of Residence<span className="required">*</span>
                     </p>
-                    <input type="text" name="name" placeholder="Canada" />
+                    <input type="text" name="from_country" placeholder="Canada" />
                   </div>
                   <div className="item">
                     <p
@@ -86,7 +116,7 @@ const WorkWithUs = () => {
                     >
                       City of Residence<span className="required">*</span>
                     </p>
-                    <input type="text" name="name" />
+                    <input type="text" name="from_cityResidence" />
                   </div>
                   <div className="question">
                     <p
@@ -147,8 +177,8 @@ const WorkWithUs = () => {
                     <div className="certificate-box">
                       <input
                         type="text"
-                        id="lname"
-                        name="lname"
+                        id="certificate"
+                        name="from_certificate"
                         defaultValue="Certificates"
                       />
                     </div>
@@ -196,11 +226,14 @@ const WorkWithUs = () => {
                     </div>
                   </div>
                   <div className="btn-block">
-                    <button type="submit" href="/">
+                    <button type="submit" href="/"
+                    onClick={notify}
+                    >
                       Apply
                     </button>
                   </div>
                 </div>
+              </form>
               </div>
             </div>
           </div>

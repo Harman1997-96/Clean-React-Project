@@ -11,10 +11,9 @@ import Footer from './components/Footer/Footer'
 import { useContext } from 'react'
 import { themeContext } from './Context'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
 // import Exterior from "./components/Pages/Exterior/Exterior";ss
 import Interior from './components/Pages/Interior/Interior'
-
-import Review from './components/Pages/Review'
 import NavbarSet from './components/Navbar/Navbar'
 import Exterior from './components/Pages/Exterior/Exterior'
 import WorkWithUs from './components/WorkWithUs/WorkWithUs'
@@ -32,6 +31,17 @@ function App() {
     >
       {/* <Navbar /> */}
       <NavbarSet />
+      <Toaster
+      toastOptions={{
+        success: {
+          iconTheme: {
+            primary: 'green',
+            secondary: 'black',
+          },
+        },
+      }}
+    
+      />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Intro />} />
