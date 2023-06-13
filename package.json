@@ -2,7 +2,7 @@
   "name": "cleaner",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.vibrantinfra.ca/",
+  "homepage": "http://www.vibrantinfra.ca/",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@iconscout/react-unicons": "^1.1.6",
